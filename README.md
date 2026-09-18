@@ -1,96 +1,161 @@
-# AI Focus Hub
+AI Workplace Productivity Assistant
 
-Build a modern, responsive AI Workplace Productivity Assistant with a professional SaaS-style interface using black, navy, and white.
+Project Overview
 
-AI Features
+The AI Workplace Productivity Assistant is a modern, responsive SaaS-style web application designed to help professionals automate common workplace productivity tasks using AI.
 
-1. Meeting Notes AI
+The application provides three main AI-powered tools:
 
-User pastes meeting notes.
+Meeting Notes Summarizer
 
-AI generates a summary, key points, action items, decisions, and deadlines.
+AI Task Planner
 
-All results must be dynamically AI-generated from the user's input, never generic or pre-written.
+AI Research Assistant
 
-AI output must be editable.
+The application is designed as a frontend-only prototype. It does not use a backend, database, authentication, or persistent storage. User inputs and generated results are only available during the current session.
+
+Features Implemented
+
+1. Meeting Notes Summarizer
+
+Accepts lengthy meeting notes from the user.
+
+Uses AI to generate a concise summary.
+
+Extracts:
+
+Key points
+
+Action items
+
+Decisions
+
+Deadlines
+
+Allows users to edit AI-generated results.
 
 2. AI Task Planner
 
-User enters tasks, priorities, and deadlines.
+Allows users to enter tasks, priorities, and deadlines.
 
-AI generates a personalized daily or weekly schedule.
+Uses AI to create personalized daily or weekly schedules.
 
-AI prioritizes tasks based on the user's provided information.
+Prioritizes tasks based on the information provided by the user.
 
-Results must be dynamically AI-generated, not static examples.
-
-Generated schedule must be editable.
+Allows users to edit the generated schedule.
 
 3. AI Research Assistant
 
-User enters a research topic, pastes text, or provides a website/article URL.
+Accepts a research topic, pasted article/content, or website URL.
 
-AI generates a summary, key insights, recommendations, and important findings based on the provided content.
+Uses AI to generate:
 
-All responses must be dynamically AI-generated from the user's input.
+Summaries
 
-AI output must be editable.
+Key insights
 
-Dashboard & UI
+Important findings
 
-Modern dashboard with cards showing the three AI tools.
+Recommendations
 
-Sidebar navigation: Dashboard, Meeting Notes, Task Planner, Research Assistant.
+Results are generated based on the user's specific input.
 
-Responsive desktop, tablet, and mobile design.
+AI-generated output can be edited by the user.
 
-Clean black, navy, and white theme.
+4. Dashboard and Navigation
 
-Professional text areas, buttons, cards, loading states, and error messages.
+Modern SaaS-style dashboard.
 
-Include clear "Generate with AI" actions.
+Sidebar navigation for the main AI tools.
 
-AI Requirements
+Responsive design for desktop, tablet, and mobile.
 
-Use structured AI prompts for each feature.
+Black, navy, and white visual theme.
 
-Never return generic placeholder responses when the user submits information.
+Loading states and error messages for AI operations.
 
-AI responses must be relevant to the specific user input.
+5. Responsible AI
 
-Show a loading state while AI is generating the response.
+A visible Responsible AI disclaimer reminds users that AI-generated information may contain errors and should be reviewed and verified before being used for important workplace decisions.
 
-Handle empty, invalid, or unsupported inputs with clear messages.
+Technologies and Tools Used
 
-Technical Constraints
+Frontend: React
 
-Frontend only. No backend.
+Programming Language: JavaScript/TypeScript
 
-Do not create authentication, databases, or persistent storage.
+Styling: CSS / Tailwind CSS
 
-Do not save user information or AI results.
+AI: AI-powered generation using structured prompts
 
-Data only exists temporarily during the current session.
+UI Development: Lovable
 
-Include a visible Responsible AI Disclaimer: "AI-generated content may contain errors. Always review and verify AI outputs before using them for important workplace decisions."
+Development Environment: Web browser
 
-This project was built with [Lovable](https://lovable.dev).
+Version Control: Git/GitHub (if configured)
 
-## Build with Lovable
+Setup Instructions
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/22e8abf7-5e36-4866-b22b-7c9b7944d769).
+Prerequisites
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Make sure you have:
 
-## Development
+A modern web browser such as Chrome, Edge, Firefox, or Safari.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Node.js and npm installed if running the project locally.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+Access to the AI service/API configured for the application, if required by the generated implementation.
+
+Installation
+
+Clone or download the project.
+
+Open the project folder in a terminal.
+
+Install the dependencies:
+
+npm install
+
+Start the development server:
+
 npm run dev
-```
+
+Open the local development URL shown in the terminal in your web browser.
+
+Lovable Setup
+
+If the application was created using Lovable:
+
+Open the project in Lovable.
+
+Review the generated application and AI integrations.
+
+Configure any required AI/API credentials through the appropriate environment settings.
+
+Run and test each AI feature.
+
+Deploy the frontend when the application is ready.
+
+Data and Privacy
+
+This project is intentionally designed without a backend or persistent database.
+
+No user accounts are required.
+
+No user data is permanently stored.
+
+No database is used.
+
+User inputs and AI outputs are temporary and should not be treated as permanently saved information.
+
+Responsible AI Disclaimer
+
+Important: AI-generated content may contain errors or inaccuracies. Users should review, verify, and use their own judgment before relying on AI-generated information for important workplace decisions.
+
+Author
+
+Lala Siwela
+
+Project Goal
+
+The goal of the AI Workplace Productivity Assistant is to provide professionals with a simple, accessible interface for using AI to summarize information, organize tasks, plan schedules, and conduct research more efficiently.
